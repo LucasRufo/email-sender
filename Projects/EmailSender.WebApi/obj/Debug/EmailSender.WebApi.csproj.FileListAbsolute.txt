@@ -82,3 +82,7 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\Microsof
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\obj\Debug\EmailSender.WebApi.csproj.CopyComplete
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\obj\Debug\EmailSender.WebApi.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\obj\Debug\EmailSender.WebApi.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.SqlServer.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.xml
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.SqlServer.xml

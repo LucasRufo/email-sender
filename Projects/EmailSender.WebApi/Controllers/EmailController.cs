@@ -7,7 +7,9 @@ namespace EmailSender.WebApi.Controllers
     {
         public IHttpActionResult Get()
         {
-            return Ok();
+            return Ok("Yeah boy");
         }
+
+        public IHttpActionResult Post([FromBody] Email email)
     }
 }
