@@ -86,3 +86,12 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFr
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.SqlServer.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.xml
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EntityFramework.SqlServer.xml
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Biz.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Data.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Biz.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Biz.dll.config
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Data.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\EmailSender.Data.dll.config
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\System.Web.Cors.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\System.Web.Http.Cors.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\System.Web.Http.Cors.xml
