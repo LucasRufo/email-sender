@@ -9,6 +9,7 @@ namespace EmailSender.WebApi.Controllers
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class EmailController : ApiController
     {
+
         private readonly IEmailService _emailService;
 
         public EmailController(IEmailService emailService)

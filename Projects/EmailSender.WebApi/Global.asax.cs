@@ -2,6 +2,7 @@
 using EmailSender.Biz.Interface;
 using EmailSender.Biz.Repository;
 using SimpleInjector;
+using SimpleInjector.Integration.Web.Mvc;
 using SimpleInjector.Integration.WebApi;
 using System.Web.Http;
 using System.Web.Mvc;
@@ -19,9 +20,12 @@ namespace EmailSender.WebApi
             container.Register<IEmailRepository, EmailRepository>();
             container.Register<IEmailService, EmailService>();
 
+            container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();
 
             GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
+            DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+
         }
     }
 }
