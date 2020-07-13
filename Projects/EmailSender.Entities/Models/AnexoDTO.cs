@@ -1,4 +1,4 @@
-﻿namespace EmailSender.WebApi.Models
+﻿namespace EmailSender.Entities.Models
 {
     public class AnexoDTO
     {
@@ -10,6 +10,6 @@
 
         public string NmAnexo { get; set; }
 
-        public virtual EmailDTO EmailDTO { get; set; }
+        public string Base64 { get; set; }
     }
 }

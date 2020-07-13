@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using EmailSender.Biz.Core;
+using EmailSender.Biz.Interface;
+using EmailSender.Biz.Repository;
+using SimpleInjector;
+using SimpleInjector.Integration.WebApi;
 using System.Web.Http;
 using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
 
 namespace EmailSender.WebApi
 {
@@ -15,6 +14,14 @@ namespace EmailSender.WebApi
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            var container = new Container();
+            container.Register<IEmailRepository, EmailRepository>();
+            container.Register<IEmailService, EmailService>();
+
+            container.Verify();
+
+            GlobalConfiguration.Configuration.DependencyResolver = new SimpleInjectorWebApiDependencyResolver(container);
         }
     }
 }

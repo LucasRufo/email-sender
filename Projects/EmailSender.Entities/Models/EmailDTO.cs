@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace EmailSender.WebApi.Models
+namespace EmailSender.Entities.Models
 {
     public class EmailDTO
     {
@@ -13,8 +13,6 @@ namespace EmailSender.WebApi.Models
         public string Assunto { get; set; }
 
         public string Corpo { get; set; }
-
-        public string Base64 { get; set; }
 
         public virtual IEnumerable<AnexoDTO> AnexoDTO { get; set; }
     }

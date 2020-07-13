@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Data", "..\..\P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.WebApi", "..\..\Projects\EmailSender.WebApi\EmailSender.WebApi.csproj", "{90588BB6-EDDE-4A46-9657-118EC89BABCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailSender.Entities", "..\..\Projects\EmailSender.Entities\EmailSender.Entities.csproj", "{5EB4B4B2-E193-4AF0-A5A6-D5D7B9274482}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{90588BB6-EDDE-4A46-9657-118EC89BABCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90588BB6-EDDE-4A46-9657-118EC89BABCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90588BB6-EDDE-4A46-9657-118EC89BABCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB4B4B2-E193-4AF0-A5A6-D5D7B9274482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB4B4B2-E193-4AF0-A5A6-D5D7B9274482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB4B4B2-E193-4AF0-A5A6-D5D7B9274482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB4B4B2-E193-4AF0-A5A6-D5D7B9274482}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
