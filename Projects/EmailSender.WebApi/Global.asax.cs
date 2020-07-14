@@ -19,6 +19,7 @@ namespace EmailSender.WebApi
             var container = new Container();
             container.Register<IEmailRepository, EmailRepository>();
             container.Register<IEmailService, EmailService>();
+            container.Register<IAnexoService, AnexoService>();
 
             container.RegisterWebApiControllers(GlobalConfiguration.Configuration);
             container.Verify();

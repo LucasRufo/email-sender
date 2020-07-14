@@ -12,3 +12,7 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\obj\Debug\Email
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\obj\Debug\EmailSender.Biz.csproj.CopyComplete
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\obj\Debug\EmailSender.Biz.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\obj\Debug\EmailSender.Biz.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\bin\Debug\EmailSender.Entities.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\bin\Debug\FluentValidation.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\bin\Debug\EmailSender.Entities.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Biz\bin\Debug\FluentValidation.xml

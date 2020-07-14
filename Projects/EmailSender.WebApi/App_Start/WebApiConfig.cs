@@ -1,5 +1,6 @@
 ﻿using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace EmailSender.WebApi
 {
@@ -18,7 +19,8 @@ namespace EmailSender.WebApi
             config.Formatters.JsonFormatter.SupportedMediaTypes
                 .Add(new MediaTypeHeaderValue("text/html"));
 
-            config.EnableCors();
+            var corsAttr = new EnableCorsAttribute("http://example.com", "*", "*");
+            config.EnableCors(corsAttr);
         }
     }
 }

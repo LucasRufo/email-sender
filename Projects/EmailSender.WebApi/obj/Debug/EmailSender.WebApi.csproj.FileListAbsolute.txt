@@ -111,3 +111,5 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\SimpleIn
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\SimpleInjector.Integration.Web.Mvc.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\SimpleInjector.Integration.Web.xml
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\FluentValidation.dll
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.WebApi\bin\FluentValidation.xml

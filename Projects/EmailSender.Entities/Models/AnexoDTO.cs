@@ -6,9 +6,9 @@
 
         public int IDEmail { get; set; }
 
-        public string CdAnexo { get; set; }
+        public string CodigoArquivo { get; set; }
 
-        public string NmAnexo { get; set; }
+        public string NomeArquivo { get; set; }
 
         public string Base64 { get; set; }
     }

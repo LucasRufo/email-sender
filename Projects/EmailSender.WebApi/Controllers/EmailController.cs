@@ -1,13 +1,10 @@
 ﻿using EmailSender.Biz.Interface;
 using EmailSender.Entities.Models;
-using System.Collections.Generic;
 using System.Web.Http;
-using System.Web.Http.Cors;
 
 namespace EmailSender.WebApi.Controllers
 {
-    [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class EmailController : ApiController
+    public class EmailController : BaseController
     {
 
         private readonly IEmailService _emailService;
@@ -24,7 +21,13 @@ namespace EmailSender.WebApi.Controllers
 
         public IHttpActionResult Post([FromBody] EmailDTO email)
         {
-            return Ok();
+            var retorno = _emailService.SendEmail(email);
+
+            if (!retorno.Success)
+                return BadRequest(retorno.Errors);
+
+            return Ok(retorno.Objeto);
         }
+
     }
 }
