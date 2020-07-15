@@ -8,6 +8,8 @@ namespace EmailSender.Biz.Interface
     {
         IEnumerable<EmailDTO> GetAll();
 
+        EmailDTO GetById(int id);
+
         Return SendEmail(EmailDTO email);
     }
 }

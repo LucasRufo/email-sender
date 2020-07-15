@@ -4,12 +4,10 @@ using EmailSender.Biz.Mapping;
 using EmailSender.Biz.Validations;
 using EmailSender.Entities.Models;
 using EmailSender.Entities.Shared;
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
-using System.Net.Mime;
 
 namespace EmailSender.Biz.Core
 {
@@ -26,7 +24,20 @@ namespace EmailSender.Biz.Core
         {
             var emailList = _emailRepository.GetAll().ToList();
 
+            if (emailList.Count == 0)
+                return null;
+
             return new EmailMapping().ToEmailDTOMap(emailList);
+        }
+
+        public EmailDTO GetById(int id)
+        {
+            var email = _emailRepository.GetById(id).FirstOrDefault();
+
+            if (email == null)
+                return null;
+
+            return new EmailMapping().ToEmailDTOMap(email);
         }
 
         public Return SendEmail(EmailDTO emailDTO)
@@ -48,7 +59,7 @@ namespace EmailSender.Biz.Core
         {
             var mailMessage = new MailMessage
             {
-                From = new MailAddress("emailsenderGitHub@gmail.com"),
+                From = new MailAddress("% EMAIL %"),
                 Subject = email.Assunto,
                 Body = email.Corpo
             };
@@ -66,7 +77,7 @@ namespace EmailSender.Biz.Core
                 Port = 587,
                 DeliveryMethod = SmtpDeliveryMethod.Network,
                 UseDefaultCredentials = false,
-                Credentials = new NetworkCredential("emailsenderGitHub@gmail.com", "emailsender123")
+                Credentials = new NetworkCredential("% EMAIL %", "% SENHA DO EMAIL %")
             };
         }
 

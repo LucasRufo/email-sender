@@ -25,6 +25,16 @@ namespace EmailSender.WebApi.Controllers
             return Ok(emailList);
         }
 
+        public IHttpActionResult Get(int id)
+        {
+            var email = _emailService.GetById(id);
+
+            if (email == null)
+                return NotFound();
+
+            return Ok(email);
+        }
+
         public IHttpActionResult Post(EmailDTO email)
         {
             if (email == null)

@@ -7,6 +7,8 @@ namespace EmailSender.Biz.Interface
     {
         IQueryable<Email> GetAll();
 
+        IQueryable<Email> GetById(int id);
+
         void Save(Email email);
     }
 }

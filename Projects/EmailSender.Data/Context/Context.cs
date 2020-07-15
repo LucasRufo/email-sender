@@ -6,7 +6,7 @@ namespace EmailSender.Data.Context
 {
     public class Context : DbContext
     {
-        public Context() : base("Data Source=DESKTOP-EN6Q4C3;Initial Catalog=MasterDev;Integrated Security=True")
+        public Context() : base("% SUA CONNECTION STRING %")
         {
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
