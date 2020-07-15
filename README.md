@@ -4,9 +4,9 @@ Construí esse projeto com o instuito de aperfeiçoar meus conhecimentos em WebA
 
 ### Rotas
 
-GET: api/email
-GET: api/email/id
-POST: api/email
+- __GET:__ api/email
+- __GET:__ api/email/id
+- __POST:__ api/email
 
 ### Ferramentas e Bibliotecas
 
