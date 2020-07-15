@@ -14,6 +14,7 @@ namespace EmailSender.Data.Context
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            Database.SetInitializer<Context>(null);
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
 

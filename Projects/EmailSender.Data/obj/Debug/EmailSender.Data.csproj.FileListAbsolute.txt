@@ -8,3 +8,4 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\bin\Debug\Enti
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.csproj.CopyComplete
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.pdb
+C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.csprojAssemblyReference.cache

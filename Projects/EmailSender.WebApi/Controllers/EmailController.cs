@@ -20,7 +20,9 @@ namespace EmailSender.WebApi.Controllers
 
         public IHttpActionResult Get()
         {
-            return Ok(new string[] { "Batata", "Teste", "Yeah" });
+            var emailList = _emailService.GetAll();
+
+            return Ok(emailList);
         }
 
         public IHttpActionResult Post(EmailDTO email)

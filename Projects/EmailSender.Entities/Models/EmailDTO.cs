@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace EmailSender.Entities.Models
 {
@@ -11,5 +12,7 @@ namespace EmailSender.Entities.Models
         public string Assunto { get; set; }
 
         public string Corpo { get; set; }
+
+        public DateTime DataEnvio { get; set; }
     }
 }

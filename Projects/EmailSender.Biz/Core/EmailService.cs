@@ -22,6 +22,13 @@ namespace EmailSender.Biz.Core
             _emailRepository = emailRepository;
         }
 
+        public IEnumerable<EmailDTO> GetAll()
+        {
+            var emailList = _emailRepository.GetAll().ToList();
+
+            return new EmailMapping().ToEmailDTOMap(emailList);
+        }
+
         public Return SendEmail(EmailDTO emailDTO)
         {
             var ret = IsValid(emailDTO);
@@ -41,7 +48,7 @@ namespace EmailSender.Biz.Core
         {
             var mailMessage = new MailMessage
             {
-                From = new MailAddress("rifelu25@gmail.com"),
+                From = new MailAddress("emailsenderGitHub@gmail.com"),
                 Subject = email.Assunto,
                 Body = email.Corpo
             };
@@ -55,9 +62,11 @@ namespace EmailSender.Biz.Core
         {
             return new SmtpClient("smtp.gmail.com")
             {
-                Port = 587,
-                Credentials = new NetworkCredential("rifelu25@gmail.com", "rufo252105"),
                 EnableSsl = true,
+                Port = 587,
+                DeliveryMethod = SmtpDeliveryMethod.Network,
+                UseDefaultCredentials = false,
+                Credentials = new NetworkCredential("emailsenderGitHub@gmail.com", "emailsender123")
             };
         }
 
