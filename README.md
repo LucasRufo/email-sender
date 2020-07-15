@@ -1,6 +1,6 @@
 # Email Sender :e-mail:
 
-Construí esse projeto com o instuito de aperfeiçoar meus conhecimentos em WebAPI com .NET framework e aprender como funciona o envio de email em C#. Todas os emails enviados são salvos em um banco de dados SQL Server. :computer:
+Construí esse projeto com o instuito de aperfeiçoar meus conhecimentos em WebAPI com .NET framework e aprender como funciona o envio de email em C#. Todos os emails enviados são salvos em um banco de dados SQL Server. :computer:
 
 ### Rotas
 
