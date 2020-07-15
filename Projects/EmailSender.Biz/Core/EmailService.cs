@@ -4,7 +4,12 @@ using EmailSender.Biz.Mapping;
 using EmailSender.Biz.Validations;
 using EmailSender.Entities.Models;
 using EmailSender.Entities.Shared;
+using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Net.Mime;
 
 namespace EmailSender.Biz.Core
 {
@@ -12,13 +17,9 @@ namespace EmailSender.Biz.Core
     {
         public readonly IEmailRepository _emailRepository;
 
-        public readonly IAnexoService _anexoService;
-
-        public EmailService(IEmailRepository emailRepository,
-                            IAnexoService anexoService)
+        public EmailService(IEmailRepository emailRepository)
         {
             _emailRepository = emailRepository;
-            _anexoService = anexoService;
         }
 
         public Return SendEmail(EmailDTO emailDTO)
@@ -26,7 +27,9 @@ namespace EmailSender.Biz.Core
             var ret = IsValid(emailDTO);
             if (!ret.Success) return ret;
 
-            CreateEmail(emailDTO);
+            var smtpClient = CreateEmail();
+            
+            smtpClient.Send(CreteMailMessage(emailDTO));
 
             var email = new EmailMapping().ToEmailMap(emailDTO);
             _emailRepository.Save(email);
@@ -34,12 +37,28 @@ namespace EmailSender.Biz.Core
             return new Return();
         }
 
-        private object CreateEmail(EmailDTO email)
+        private MailMessage CreteMailMessage(EmailDTO email)
         {
-            if (email.AnexoDTO != null && email.AnexoDTO.Any())
-                _anexoService.SaveFiles(email.AnexoDTO);
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress("rifelu25@gmail.com"),
+                Subject = email.Assunto,
+                Body = email.Corpo
+            };
 
-            return new { };
+            mailMessage.To.Add(email.To);
+
+            return mailMessage;
+        }
+
+        private SmtpClient CreateEmail()
+        {
+            return new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587,
+                Credentials = new NetworkCredential("rifelu25@gmail.com", "rufo252105"),
+                EnableSsl = true,
+            };
         }
 
         private Return IsValid(EmailDTO emailDTO)
@@ -47,9 +66,6 @@ namespace EmailSender.Biz.Core
             var retorno = new Return();
 
             ExecutarValidacao(new EmailValidator(), emailDTO, retorno);
-
-            foreach (var anexoDTO in emailDTO.AnexoDTO)
-                ExecutarValidacao(new AnexoValidator(), anexoDTO, retorno);
 
             return retorno;
         }

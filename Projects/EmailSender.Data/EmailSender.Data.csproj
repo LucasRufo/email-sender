@@ -52,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\Context.cs" />
-    <Compile Include="Models\Anexo.cs" />
     <Compile Include="Models\Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

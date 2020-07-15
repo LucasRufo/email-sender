@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmailSender.Data.Models
 {
     public class Email
     {
+        [Key]
         public int Id_Email { get; set; }
-
-        public string Ds_From { get; set; }
 
         public string Ds_To { get; set; }
 
@@ -18,7 +18,5 @@ namespace EmailSender.Data.Models
         public bool Fl_Ativo { get; set; }
 
         public DateTime Dt_Criacao { get; set; }
-
-        public virtual IEnumerable<Anexo> Anexo { get; set; }
     }
 }

@@ -5,7 +5,7 @@ namespace EmailSender.Entities.Shared
 {
     public class Return
     {
-        public bool Success { get { return Errors.Any(); } }
+        public bool Success { get { return !Errors.Any(); } }
 
         public Dictionary<string, string> Errors { get; private set; } = new Dictionary<string, string>();
 

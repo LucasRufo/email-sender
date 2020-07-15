@@ -19,7 +19,7 @@ namespace EmailSender.WebApi
             config.Formatters.JsonFormatter.SupportedMediaTypes
                 .Add(new MediaTypeHeaderValue("text/html"));
 
-            var corsAttr = new EnableCorsAttribute("http://example.com", "*", "*");
+            var corsAttr = new EnableCorsAttribute("*", "*", "*");
             config.EnableCors(corsAttr);
         }
     }

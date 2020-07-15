@@ -1,5 +1,4 @@
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Entities\bin\Debug\EmailSender.Entities.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Entities\bin\Debug\EmailSender.Entities.pdb
-C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Entities\obj\Debug\EmailSender.Entities.csprojAssemblyReference.cache
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Entities\obj\Debug\EmailSender.Entities.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Entities\obj\Debug\EmailSender.Entities.pdb

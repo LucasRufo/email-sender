@@ -5,7 +5,6 @@ C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\bin\Debug\Enti
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\bin\Debug\EntityFramework.xml
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.csprojAssemblyReference.cache
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.csproj.CopyComplete
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.dll
 C:\Users\rifel\source\repos\EmailSender\Projects\EmailSender.Data\obj\Debug\EmailSender.Data.pdb
